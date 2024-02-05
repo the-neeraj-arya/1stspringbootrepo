@@ -1,0 +1,12 @@
+.field{
+    width: 100%;
+}
+.card{
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+.container{
+    margin-top: 50px;
+}

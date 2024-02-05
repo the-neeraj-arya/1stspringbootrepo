@@ -1,1 +1,28 @@
-<p>email works!</p>
+<div class="container">
+    <div class="card">
+    <form (ngSubmit)="onSend()">
+        <div>
+        <h1>Compose Email</h1>
+        <mat-form-field class="field" appearance="outline">
+            <mat-label>To</mat-label>
+            <input name="to" [(ngModel)]="data.to" matInput>
+        </mat-form-field>
+        <mat-form-field class="field" appearance="outline">
+            <mat-label>Subject</mat-label>
+            <input name="subject" [(ngModel)]="data.subject" matInput>
+        </mat-form-field>
+        <mat-form-field class="example-full-width field" appearance="outline">
+            <mat-label>Enter your message</mat-label>
+            <textarea name="message" [(ngModel)]="data.message"  rows="8" matInput placeholder="Ex. Hey, write something..."></textarea>
+          </mat-form-field>
+        </div>
+        <div class="row">
+            <div class="row1" style="text-align: center;">
+                <button type="reset" mat-flat-button color="primary">Reset</button>
+                <button type="submit" mat-flat-button color="accent" style="margin-left:5px;">Send</button>
+            </div>
+        </div>
+    </form>
+    <!-- {{data | json}} -->
+    </div>
+</div>

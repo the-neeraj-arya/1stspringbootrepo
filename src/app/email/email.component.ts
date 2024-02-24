@@ -24,7 +24,7 @@ export class EmailComponent implements OnInit {
     console.log("Data :-",this.data);
     this.email.sendEmail(this.data).subscribe(
       response=>{
-        
+
        },error=>{
         
       }
